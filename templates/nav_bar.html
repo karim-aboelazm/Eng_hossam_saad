@@ -5,49 +5,57 @@
     </div>
     <div class="content">
       <ul class="main-menu">
-        <li class="menu-item {% if request.path == '/' %}active{% endif %}">
+        <li class="menu-item">
           <a href="{% url 'resume:home' %}" class="menu-link">
             <span class="icon ti-home"></span>
             <span class="caption">Home</span>
           </a>
         </li>
-        <li class="menu-item {% if request.path == '/about/' %}active{% endif %}">
-          <a href="{% url 'resume:about' %}" class="menu-link">
+        <li class="menu-item">
+          <a href="#about" class="menu-link">
             <span class="icon ti-user"></span>
             <span class="caption">About</span>
           </a>
         </li>
-        <li class="menu-item {% if request.path == '/skills/' %}active{% endif %}">
-          <a href="{% url 'resume:skills' %}" class="menu-link">
+        <li class="menu-item">
+          <a href="#skill" class="menu-link">
             <span class="icon ti-support"></span>
             <span class="caption">Skills</span>
           </a>
         </li>
         
-        <li class="menu-item {% if request.path == '/my-portofolio/' %}active{% endif %}">
-          <a href="{% url 'resume:my_portofolio' %}" class="menu-link">
+        <li class="menu-item">
+          <a href="#portfolio" class="menu-link">
             <span class="icon ti-panel" style="font-size:35px;"></span>
             <span class="caption">Projects</span>
           </a>
         </li>
         
-        <li class="menu-item {% if request.path == '/my-services/' %}active{% endif %}">
-          <a href="{% url 'resume:my_services' %}" class="menu-link">
+        <li class="menu-item">
+          <a href="#achievements" class="menu-link">
             <span class="icon ti-medall" style="font-size:35px;"></span>
             <span class="caption">Achievements</span>
           </a>
         </li>
         
-        <li class="menu-item {% if request.path == '/my-certifications/' %}active{% endif %}">
-          <a href="{% url 'resume:my_certifications' %}" class="menu-link">
+        <li class="menu-item">
+          <a href="#blog" class="menu-link">
             <span class="icon ti-cup"></span>
             <span class="caption">My Certification</span>
           </a>
         </li>
+        
+        <li class="menu-item">
+          <a href="#contact" class="menu-link">
+            <span class="icon ti-email"></span>
+            <span class="caption">Contact</span>
+          </a>
+        </li>
+
       </ul>
     </div>
 </div>
-{% include "style.html" %}
+
 <style>
   @media only screen and (max-width: 500px)  {
     .minibar
