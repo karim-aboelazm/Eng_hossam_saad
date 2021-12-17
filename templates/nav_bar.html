@@ -1,0 +1,59 @@
+<!-- Minibar -->
+<div class="minibar">
+    <div class="header">
+      <div class="brand"></div>
+    </div>
+    <div class="content">
+      <ul class="main-menu">
+        <li class="menu-item {% if request.path == '/' %}active{% endif %}">
+          <a href="{% url 'resume:home' %}" class="menu-link">
+            <span class="icon ti-home"></span>
+            <span class="caption">Home</span>
+          </a>
+        </li>
+        <li class="menu-item {% if request.path == '/about/' %}active{% endif %}">
+          <a href="{% url 'resume:about' %}" class="menu-link">
+            <span class="icon ti-user"></span>
+            <span class="caption">About</span>
+          </a>
+        </li>
+        <li class="menu-item {% if request.path == '/skills/' %}active{% endif %}">
+          <a href="{% url 'resume:skills' %}" class="menu-link">
+            <span class="icon ti-support"></span>
+            <span class="caption">Skills</span>
+          </a>
+        </li>
+        
+        <li class="menu-item {% if request.path == '/my-portofolio/' %}active{% endif %}">
+          <a href="{% url 'resume:my_portofolio' %}" class="menu-link">
+            <span class="icon ti-panel" style="font-size:35px;"></span>
+            <span class="caption">Projects</span>
+          </a>
+        </li>
+        
+        <li class="menu-item {% if request.path == '/my-services/' %}active{% endif %}">
+          <a href="{% url 'resume:my_services' %}" class="menu-link">
+            <span class="icon ti-medall" style="font-size:35px;"></span>
+            <span class="caption">Achievements</span>
+          </a>
+        </li>
+        
+        <li class="menu-item {% if request.path == '/my-certifications/' %}active{% endif %}">
+          <a href="{% url 'resume:my_certifications' %}" class="menu-link">
+            <span class="icon ti-cup"></span>
+            <span class="caption">My Certification</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+</div>
+{% include "style.html" %}
+<style>
+  @media only screen and (max-width: 500px)  {
+    .minibar
+    {
+        width:100%;
+    }
+    
+  }
+</style>

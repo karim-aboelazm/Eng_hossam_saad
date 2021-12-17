@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+  About
+{% endblock title %}
+{% block content %}
+  <!-- Page About -->
+<div class="vg-page page-about" id="about">
+    <!-- Profile -->
+    <div class="container py-3">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="img-place wow zoomIn">
+            <img src="{% static 'img/Person.jfif' %}" alt="Photo Profile">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="caption wow fadeInRight">
+            <h2 class="fg-dark">Hossam Saad</h2>
+            <p class="fg-theme fw-medium">Data Analyst</p>
+            <p>Data Analyst with a passion for delivering valuable data through analytical functions and
+              data retrieval methods.
+              From your data, I can derive insights that can tell us more information about your company such as which
+              strategy to use in marketing,
+              good pricing which get high win money with good feeling and good feedback from clients,
+              knowing the areas we want to focus on or the products that are expected to increase or decrease in their
+              sale in the future,
+              and all of this is supported by statistical methods.</p>
+            <ul class="theme-list">
+              <li class="fg-dark"><b>From:</b> Egypt</li>
+              <li class="fg-dark"><b>Lives In:</b> Cairo ,Egypt</li>
+              <li class="fg-dark"><b>Age:</b> 23</li>
+              <li class="fg-dark"><b>Gender:</b> Male</li>
+            </ul>
+            <button class="btn btn-theme btn-rounded">
+              <a href="https://drive.google.com/file/d/1jhGmhmOWUlIZKkhOqHXj8RnmrIrMiEOu/view?usp=sharing"
+                style="color: #fff; text-decoration:none;"> Download CV</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div> <!-- End profile -->
+    <!-- Skills -->
+</div> 
+{% endblock content %}

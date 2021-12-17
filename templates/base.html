@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    {% include "head.html" %}
+    <title>{% block title %}{% endblock title %}</title>
+</head>
+
+<body class="theme-red">
+  <div class="btn-back_to_top">
+    <span class="ti-arrow-up"></span>
+  </div>
+
+  <div class="topbar-nav fixed-top">
+    <div class="brand">
+      <img src="{% static 'favicon.ico' %}" alt="" width="30" height="30">
+    </div>
+    <h3 class="ml-1">Gram</h3>
+    <button class="btn-fab toggle-menu mr-3"><span class="ti-menu"></span></button>
+  </div>
+
+  {% include "nav_bar.html" %}
+  {% block content %}{% endblock content %}
+  {% include "footer.html" %}
+  {% include "scripts.html" %}
+</body>
+
+</html>
